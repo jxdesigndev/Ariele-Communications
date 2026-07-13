@@ -51,46 +51,46 @@
     <section class="hero hero-corporate animate-on-scroll" style="background: linear-gradient(to bottom right, var(--black), #1a1a1a); padding: 8rem 0 6rem 0; border-bottom: 2px solid var(--gold); color: var(--white);">
       <div class="container container-narrow" style="max-width: 1000px;">
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 0; background: var(--white); border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.08); overflow: hidden; color: var(--black);">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 0; background: var(--black-soft); border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.5); overflow: hidden; color: var(--white); border: 1px solid var(--border-dark);">
           
           <div style="background: url('images/contact-bg.jpg') center/cover no-repeat; min-height: 400px;"></div>
           
-          <div style="padding: 3rem;">
-            <div style="margin-bottom: 2rem;">
-              <h1 style="font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 1rem;">Contact Us</h1>
-              <p style="color: var(--text-on-light-muted); font-size: 1.1rem;">We're here to help with inquiries about our products or partnerships.</p>
+          <div style="padding: 3.5rem 3rem;">
+            <div style="margin-bottom: 2.5rem;">
+              <h1 style="font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 1rem; color: var(--white);">Contact Us</h1>
+              <p style="color: var(--text-on-dark-muted); font-size: 1.1rem;">We're here to help with inquiries about our products or partnerships.</p>
             </div>
             
             <form onsubmit="event.preventDefault(); alert('Message sent! (This is a frontend demo)');">
             
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
               <div>
-                <label for="name" style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.05em;">FULL NAME</label>
-                <input type="text" id="name" required style="width: 100%; padding: 0.875rem; border: 1px solid var(--border-light); border-radius: var(--radius); font-family: var(--font-body);">
+                <label for="name" style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.05em; color: var(--text-on-dark-muted);">FULL NAME</label>
+                <input type="text" id="name" required style="width: 100%; padding: 0.875rem; background: rgba(255,255,255,0.03); border: 1px solid var(--border-dark); color: var(--white); border-radius: var(--radius); font-family: var(--font-body);">
               </div>
               <div>
-                <label for="email" style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.05em;">EMAIL ADDRESS</label>
-                <input type="email" id="email" required style="width: 100%; padding: 0.875rem; border: 1px solid var(--border-light); border-radius: var(--radius); font-family: var(--font-body);">
+                <label for="email" style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.05em; color: var(--text-on-dark-muted);">EMAIL ADDRESS</label>
+                <input type="email" id="email" required style="width: 100%; padding: 0.875rem; background: rgba(255,255,255,0.03); border: 1px solid var(--border-dark); color: var(--white); border-radius: var(--radius); font-family: var(--font-body);">
               </div>
             </div>
             
             <div style="margin-bottom: 1.5rem;">
-              <label for="subject" style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.05em;">SUBJECT</label>
-              <select id="subject" required style="width: 100%; padding: 0.875rem; border: 1px solid var(--border-light); border-radius: var(--radius); font-family: var(--font-body);">
-                <option value="">Please select a topic</option>
-                <option value="nexus">Nexus Sales & Support</option>
-                <option value="goodpal">GoodPal Support</option>
-                <option value="partners">Partnership Inquiry</option>
-                <option value="other">General Inquiry</option>
+              <label for="subject" style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.05em; color: var(--text-on-dark-muted);">SUBJECT</label>
+              <select id="subject" required style="width: 100%; padding: 0.875rem; background: rgba(255,255,255,0.03); border: 1px solid var(--border-dark); color: var(--white); border-radius: var(--radius); font-family: var(--font-body);">
+                <option value="" style="color: var(--black);">Please select a topic</option>
+                <option value="nexus" style="color: var(--black);">Nexus Sales & Support</option>
+                <option value="goodpal" style="color: var(--black);">GoodPal Support</option>
+                <option value="partners" style="color: var(--black);">Partnership Inquiry</option>
+                <option value="other" style="color: var(--black);">General Inquiry</option>
               </select>
             </div>
             
-            <div style="margin-bottom: 2rem;">
-              <label for="message" style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.05em;">MESSAGE</label>
-              <textarea id="message" rows="6" required style="width: 100%; padding: 0.875rem; border: 1px solid var(--border-light); border-radius: var(--radius); font-family: var(--font-body);"></textarea>
+            <div style="margin-bottom: 2.5rem;">
+              <label for="message" style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.05em; color: var(--text-on-dark-muted);">MESSAGE</label>
+              <textarea id="message" rows="6" required style="width: 100%; padding: 0.875rem; background: rgba(255,255,255,0.03); border: 1px solid var(--border-dark); color: var(--white); border-radius: var(--radius); font-family: var(--font-body);"></textarea>
             </div>
             
-            <button type="submit" style="background: var(--black); color: var(--white); padding: 1rem; border-radius: var(--radius); font-weight: 600; width: 100%; font-size: 1rem; cursor: pointer;">Send Message</button>
+            <button type="submit" style="background: var(--gold); color: var(--black); padding: 1.25rem; border-radius: var(--radius); font-weight: 600; width: 100%; font-size: 1.1rem; cursor: pointer; border: none; transition: transform 0.2s;">Send Message</button>
           </form>
           </div>
         </div>
@@ -102,7 +102,7 @@
   <!-- FOOTER -->
   <footer class="footer" style="background: var(--black); color: var(--text-on-dark); padding: 4rem 0 2rem 0; border-top: 1px solid var(--border-dark);">
     <div class="container">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 3rem; margin-bottom: 3rem;">
         <div>
           <div style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; color: var(--white); margin-bottom: 1rem;">Ariele Communications</div>
           <p style="color: var(--text-on-dark-muted); font-size: 0.875rem;">Building tools for the messages that matter.</p>
@@ -119,8 +119,8 @@
         <div>
           <h4 style="color: var(--white); margin-bottom: 1rem; font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase;">Products</h4>
           <ul style="list-style: none; padding: 0;">
-            <li style="margin-bottom: 0.5rem;"><a href="https://nexus-ariele.vercel.app" target="_blank" style="color: var(--gold);">Nexus (B2B SMS)</a></li>
-            <li style="margin-bottom: 0.5rem;"><a href="https://goodpal-ariele.vercel.app" target="_blank" style="color: var(--gold);">GoodPal (B2C Chat)</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="https://nex-xus.vercel.app" target="_blank" style="color: var(--gold);">Nexus (B2B SMS)</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="https://goodpal.vercel.app" target="_blank" style="color: var(--gold);">GoodPal (B2C Chat)</a></li>
           </ul>
         </div>
         <div>

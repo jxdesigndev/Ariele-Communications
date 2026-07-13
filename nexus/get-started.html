@@ -54,7 +54,7 @@
     <section class="section animate-on-scroll" style="padding: 6rem 0;">
       <div class="container container-narrow" style="max-width: 1000px;">
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 0; background: var(--white); border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.08); overflow: hidden; color: var(--black);">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 0; background: var(--white); border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.08); overflow: hidden; color: var(--black);">
           
           <div style="background: url('images/get-started-bg.jpg') center/cover no-repeat; min-height: 400px;"></div>
           
@@ -69,7 +69,7 @@
             
             <div style="margin-bottom: 2rem;">
               <label style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.05em;">INSTITUTION TYPE</label>
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1rem;">
                 <label style="display: block; border: 1px solid var(--border-light); border-radius: var(--radius); padding: 1rem; cursor: pointer; text-align: center;">
                   <input type="radio" name="orgType" value="school" required style="margin-bottom: 0.5rem;">
                   <div style="font-weight: 600;">School</div>
@@ -86,7 +86,7 @@
               <input type="text" id="orgName" required style="width: 100%; padding: 0.875rem; border: 1px solid var(--border-light); border-radius: var(--radius); font-family: var(--font-body);">
             </div>
             
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
               <div>
                 <label for="contactName" style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.05em;">CONTACT PERSON</label>
                 <input type="text" id="contactName" required style="width: 100%; padding: 0.875rem; border: 1px solid var(--border-light); border-radius: var(--radius); font-family: var(--font-body);">
@@ -119,7 +119,7 @@
   <!-- FOOTER -->
   <footer class="footer" style="background: var(--black); color: var(--text-on-dark); padding: 4rem 0 2rem 0; border-top: 1px solid var(--border-dark);">
     <div class="container">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 3rem; margin-bottom: 3rem;">
         <div>
           <div style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; color: var(--white); margin-bottom: 1rem;">Nexus</div>
           <p style="color: var(--text-on-dark-muted); font-size: 0.875rem;">Nexus is a product of <a href="https://ariele-communications.vercel.app" target="_blank" style="color: var(--gold);">Ariele Communications</a>.</p>
