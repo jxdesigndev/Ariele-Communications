@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ariele Communications</title>
+  <meta name="description" content="We build tools for the messages that matter. Communication tech in Africa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Add any Ariele specific CSS overrides here if needed */
+    .hero-corporate {
+      background: var(--black);
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+      padding: 8rem 0;
+      border-bottom: 4px solid var(--gold);
+    }
+    .hero-corporate::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at 70% 30%, rgba(201, 168, 76, 0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .stat-card {
+      border-left: 2px solid var(--gold);
+      padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .stat-card h3 {
+      font-size: 2.5rem;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" style="background: rgba(10,10,10,0.95); backdrop-filter: blur(10px); color: var(--white); border-bottom: 1px solid var(--border-dark);">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="index.html" class="nav-brand" style="font-family: var(--font-display); font-size: 1.75rem; font-weight: 600; letter-spacing: 1px; color: var(--white);">Ariele<span style="color: var(--gold); font-size: 1rem; margin-left: 8px; font-family: var(--font-body); font-weight: 400; letter-spacing: normal;">Communications</span></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active" style="color: var(--gold);">Home</a></li>
+        <li><a href="about.html" style="color: var(--text-on-dark);">About Us</a></li>
+        <li><a href="insights.html" style="color: var(--text-on-dark);">Insights</a></li>
+        <li><a href="partners.html" style="color: var(--text-on-dark);">Partners</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="contact.html" class="btn btn-outline" style="border: 1px solid var(--gold); color: var(--gold); padding: 0.6rem 1.25rem; border-radius: var(--radius); font-weight: 500; font-size: 0.875rem;">Contact Us</a>
+        <button class="menu-toggle" id="menu-toggle" style="color: var(--white);">
+          <span style="background-color: var(--white);"></span>
+          <span style="background-color: var(--white);"></span>
+          <span style="background-color: var(--white);"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu" style="background: var(--black); color: var(--white);">
+    <ul style="padding: 2rem;">
+      <li style="margin-bottom: 1rem;"><a href="index.html" style="color: var(--gold); font-size: 1.25rem; font-weight: 500;">Home</a></li>
+      <li style="margin-bottom: 1rem;"><a href="about.html" style="color: var(--text-on-dark); font-size: 1.25rem; font-weight: 500;">About Us</a></li>
+      <li style="margin-bottom: 1rem;"><a href="insights.html" style="color: var(--text-on-dark); font-size: 1.25rem; font-weight: 500;">Insights</a></li>
+      <li style="margin-bottom: 1rem;"><a href="partners.html" style="color: var(--text-on-dark); font-size: 1.25rem; font-weight: 500;">Partners</a></li>
+      <li style="margin-top: 2rem;"><a href="contact.html" style="color: var(--text-on-dark-muted);">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <main style="padding-top: var(--nav-height);">
+    <!-- HERO SECTION -->
+    <section class="hero hero-corporate animate-on-scroll">
+      <div class="container hero-content text-center" style="max-width: 900px; position: relative; z-index: 2;">
+        <span class="eyebrow" style="color: var(--gold); font-size: 0.875rem; letter-spacing: 0.15em; font-weight: 600; display: block; margin-bottom: 1.5rem;">ARIELE COMMUNICATIONS</span>
+        <h1 style="font-family: var(--font-display); font-size: clamp(3rem, 6vw, 5rem); line-height: 1.1; margin-bottom: 1.5rem;">We build tools for the <em style="color: var(--gold); font-style: italic;">messages that matter</em>.</h1>
+        <p class="hero-subtitle" style="color: var(--text-on-dark-muted); font-size: 1.25rem; max-width: 600px; margin: 0 auto 3rem auto; line-height: 1.6;">A technology company focused on reliable, high-impact communication platforms across Africa.</p>
+        <div class="btn-group" style="display: flex; gap: 1rem; justify-content: center;">
+          <a href="#products" class="btn btn-gold" style="background: var(--gold); color: var(--black); padding: 1rem 2rem; border-radius: var(--radius); font-weight: 600;">View Our Products</a>
+          <a href="about.html" class="btn btn-outline" style="border: 1px solid var(--border-dark); color: var(--white); padding: 1rem 2rem; border-radius: var(--radius); font-weight: 600;">Who We Are</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATISTICS SECTION -->
+    <section class="section animate-on-scroll" style="padding: 4rem 0; background: var(--black-soft); border-bottom: 1px solid var(--border-dark);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+          <div class="stat-card text-center" style="border-left: none; border-bottom: 2px solid var(--gold); padding-bottom: 1.5rem;">
+            <h3 style="font-family: var(--font-display); font-size: 3rem; color: var(--gold); margin-bottom: 0;">7+</h3>
+            <p style="color: var(--text-on-dark-muted); font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">Nigerian States</p>
+          </div>
+          <div class="stat-card text-center" style="border-left: none; border-bottom: 2px solid var(--gold); padding-bottom: 1.5rem;">
+            <h3 style="font-family: var(--font-display); font-size: 3rem; color: var(--gold); margin-bottom: 0;">4</h3>
+            <p style="color: var(--text-on-dark-muted); font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">Telecom Networks</p>
+          </div>
+          <div class="stat-card text-center" style="border-left: none; border-bottom: 2px solid var(--gold); padding-bottom: 1.5rem;">
+            <h3 style="font-family: var(--font-display); font-size: 3rem; color: var(--gold); margin-bottom: 0;">99.9%</h3>
+            <p style="color: var(--text-on-dark-muted); font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">Uptime Reliability</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS SECTION (Crucial Routing) -->
+    <section id="products" class="section animate-on-scroll" style="padding: 6rem 0; background: var(--white-off);">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 4rem;">
+          <div style="width: 60px; height: 2px; background: var(--gold); margin: 0 auto 1.5rem auto;"></div>
+          <h2 style="font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 1rem;">Our Products</h2>
+          <p style="color: var(--text-on-light-muted); max-width: 600px; margin: 0 auto;">Dedicated platforms built to solve specific communication needs.</p>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+          
+          <!-- Nexus Card -->
+          <div style="background: var(--black); padding: 3rem; border-radius: var(--radius-lg); color: var(--white); display: flex; flex-direction: column;">
+            <div style="font-family: var(--font-display); font-size: 2rem; color: var(--gold); margin-bottom: 0.5rem;">Nexus</div>
+            <div style="font-weight: 600; font-size: 0.9rem; color: var(--text-on-dark-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1.5rem;">B2B Bulk SMS Platform</div>
+            <p style="color: var(--text-on-dark-muted); margin-bottom: 2.5rem; line-height: 1.6; flex-grow: 1;">A robust, high-deliverability SMS platform designed specifically for schools and churches in Nigeria. Guarantee your critical messages reach parents and congregants.</p>
+            <a href="https://nexus-ariele.vercel.app" target="_blank" style="background: var(--gold); color: var(--black); padding: 1rem; border-radius: var(--radius); font-weight: 600; text-align: center; display: block; transition: transform 0.2s;">Visit Nexus &rarr;</a>
+          </div>
+          
+          <!-- GoodPal Card -->
+          <div style="background: var(--white); padding: 3rem; border-radius: var(--radius-lg); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-top: 4px solid var(--black); display: flex; flex-direction: column;">
+            <div style="font-family: var(--font-display); font-size: 2rem; color: var(--black); margin-bottom: 0.5rem;">GoodPal</div>
+            <div style="font-weight: 600; font-size: 0.9rem; color: var(--text-on-light-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1.5rem;">B2C Conversation Service</div>
+            <p style="color: var(--text-on-light-muted); margin-bottom: 2.5rem; line-height: 1.6; flex-grow: 1;">Book a session with a skilled human conversationalist on any topic. No AI. No scripts. Just real people ready to talk, challenge your ideas, and bring their lived experience.</p>
+            <a href="https://goodpal-ariele.vercel.app" target="_blank" style="background: var(--black); color: var(--white); padding: 1rem; border-radius: var(--radius); font-weight: 600; text-align: center; display: block; transition: transform 0.2s;">Visit GoodPal &rarr;</a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION / PHILOSOPHY -->
+    <section class="section animate-on-scroll" style="padding: 6rem 0; background: var(--white);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+          <div>
+            <span style="color: var(--gold); font-size: 0.875rem; letter-spacing: 0.15em; font-weight: 600; display: block; margin-bottom: 1rem;">OUR CONVICTION</span>
+            <div style="width: 60px; height: 2px; background: var(--gold); margin-bottom: 1.5rem;"></div>
+            <h2 style="font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 1.5rem; line-height: 1.2;">Connection is not a feature. It is the foundation.</h2>
+            <p style="color: var(--text-on-light-muted); margin-bottom: 1.5rem;">Whether it is a school alerting a parent about an emergency closure, or an individual seeking a meaningful conversation at the end of a long day, communication is the infrastructure of trust.</p>
+            <p style="color: var(--text-on-light-muted); margin-bottom: 2rem;">We are a deeply local team with a presence in Southeast and South-South Nigeria, building technology that understands the nuances of how people here actually connect.</p>
+            <a href="about.html" style="color: var(--black); font-weight: 600; border-bottom: 1px solid var(--black); padding-bottom: 2px;">Read Our Story</a>
+          </div>
+          <div style="background: var(--black-soft); border-radius: var(--radius-lg); padding: 4rem; text-align: center;">
+            <!-- Decorative logo element -->
+            <div style="width: 120px; height: 120px; border: 2px solid var(--gold); border-radius: 50%; margin: 0 auto; position: relative;">
+              <div style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%;"></div>
+              <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: var(--font-display); font-size: 2.5rem; color: var(--gold);">A</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" style="background: var(--black); color: var(--text-on-dark); padding: 4rem 0 2rem 0; border-top: 1px solid var(--border-dark);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+        <div>
+          <div style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; color: var(--white); margin-bottom: 1rem;">Ariele Communications</div>
+          <p style="color: var(--text-on-dark-muted); font-size: 0.875rem;">Building tools for the messages that matter.</p>
+        </div>
+        <div>
+          <h4 style="color: var(--white); margin-bottom: 1rem; font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase;">Company</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 0.5rem;"><a href="about.html" style="color: var(--text-on-dark-muted);">About Us</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="insights.html" style="color: var(--text-on-dark-muted);">Insights</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="partners.html" style="color: var(--text-on-dark-muted);">Partners</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="contact.html" style="color: var(--text-on-dark-muted);">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: var(--white); margin-bottom: 1rem; font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase;">Products</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 0.5rem;"><a href="https://nexus-ariele.vercel.app" target="_blank" style="color: var(--gold);">Nexus (B2B SMS)</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="https://goodpal-ariele.vercel.app" target="_blank" style="color: var(--gold);">GoodPal (B2C Chat)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: var(--white); margin-bottom: 1rem; font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase;">Legal</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 0.5rem;"><a href="privacy.html" style="color: var(--text-on-dark-muted);">Privacy Policy</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="terms.html" style="color: var(--text-on-dark-muted);">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="border-top: 1px solid var(--border-dark); padding-top: 2rem; text-align: center; color: var(--text-on-dark-muted); font-size: 0.875rem;">
+        <p>&copy; 2026 Ariele Communications. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      if(toggle && menu) {
+        toggle.addEventListener('click', () => {
+          menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+      }
+    });
+  </script>
+</body>
+</html>

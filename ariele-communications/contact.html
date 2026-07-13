@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Ariele Communications</title>
+  <meta name="description" content="Get in touch with the Ariele Communications team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body style="background: var(--white-off);">
+
+  <!-- NAVIGATION -->
+  <nav class="nav" style="background: rgba(10,10,10,0.95); backdrop-filter: blur(10px); color: var(--white); border-bottom: 1px solid var(--border-dark);">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="index.html" class="nav-brand" style="font-family: var(--font-display); font-size: 1.75rem; font-weight: 600; letter-spacing: 1px; color: var(--white);">Ariele<span style="color: var(--gold); font-size: 1rem; margin-left: 8px; font-family: var(--font-body); font-weight: 400; letter-spacing: normal;">Communications</span></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" style="color: var(--text-on-dark);">Home</a></li>
+        <li><a href="about.html" style="color: var(--text-on-dark);">About Us</a></li>
+        <li><a href="insights.html" style="color: var(--text-on-dark);">Insights</a></li>
+        <li><a href="partners.html" style="color: var(--text-on-dark);">Partners</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="contact.html" class="btn btn-gold" style="background: var(--gold); color: var(--black); padding: 0.6rem 1.25rem; border-radius: var(--radius); font-weight: 600; font-size: 0.875rem;">Contact Us</a>
+        <button class="menu-toggle" id="menu-toggle" style="color: var(--white);">
+          <span style="background-color: var(--white);"></span>
+          <span style="background-color: var(--white);"></span>
+          <span style="background-color: var(--white);"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu" style="background: var(--black); color: var(--white);">
+    <ul style="padding: 2rem;">
+      <li style="margin-bottom: 1rem;"><a href="index.html" style="color: var(--text-on-dark); font-size: 1.25rem; font-weight: 500;">Home</a></li>
+      <li style="margin-bottom: 1rem;"><a href="about.html" style="color: var(--text-on-dark); font-size: 1.25rem; font-weight: 500;">About Us</a></li>
+      <li style="margin-bottom: 1rem;"><a href="insights.html" style="color: var(--text-on-dark); font-size: 1.25rem; font-weight: 500;">Insights</a></li>
+      <li style="margin-bottom: 1rem;"><a href="partners.html" style="color: var(--text-on-dark); font-size: 1.25rem; font-weight: 500;">Partners</a></li>
+      <li style="margin-top: 2rem;"><a href="contact.html" style="color: var(--gold);">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <main style="padding-top: var(--nav-height);">
+    
+    <section class="section animate-on-scroll" style="padding: 6rem 0;">
+      <div class="container container-narrow">
+        
+        <div class="text-center" style="margin-bottom: 3rem;">
+          <h1 style="font-family: var(--font-display); font-size: 3rem; margin-bottom: 1rem;">Contact Us</h1>
+          <p style="color: var(--text-on-light-muted); font-size: 1.1rem;">We're here to help with inquiries about our products or partnerships.</p>
+        </div>
+        
+        <div style="background: var(--white); padding: 3rem; border-radius: var(--radius-lg); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-top: 4px solid var(--black);">
+          <form onsubmit="event.preventDefault(); alert('Message sent! (This is a frontend demo)');">
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+              <div>
+                <label for="name" style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.05em;">FULL NAME</label>
+                <input type="text" id="name" required style="width: 100%; padding: 0.875rem; border: 1px solid var(--border-light); border-radius: var(--radius); font-family: var(--font-body);">
+              </div>
+              <div>
+                <label for="email" style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.05em;">EMAIL ADDRESS</label>
+                <input type="email" id="email" required style="width: 100%; padding: 0.875rem; border: 1px solid var(--border-light); border-radius: var(--radius); font-family: var(--font-body);">
+              </div>
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+              <label for="subject" style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.05em;">SUBJECT</label>
+              <select id="subject" required style="width: 100%; padding: 0.875rem; border: 1px solid var(--border-light); border-radius: var(--radius); font-family: var(--font-body);">
+                <option value="">Please select a topic</option>
+                <option value="nexus">Nexus Sales & Support</option>
+                <option value="goodpal">GoodPal Support</option>
+                <option value="partners">Partnership Inquiry</option>
+                <option value="other">General Inquiry</option>
+              </select>
+            </div>
+            
+            <div style="margin-bottom: 2rem;">
+              <label for="message" style="display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.05em;">MESSAGE</label>
+              <textarea id="message" rows="6" required style="width: 100%; padding: 0.875rem; border: 1px solid var(--border-light); border-radius: var(--radius); font-family: var(--font-body);"></textarea>
+            </div>
+            
+            <button type="submit" style="background: var(--black); color: var(--white); padding: 1rem; border-radius: var(--radius); font-weight: 600; width: 100%; font-size: 1rem; cursor: pointer;">Send Message</button>
+          </form>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" style="background: var(--black); color: var(--text-on-dark); padding: 4rem 0 2rem 0; border-top: 1px solid var(--border-dark);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+        <div>
+          <div style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; color: var(--white); margin-bottom: 1rem;">Ariele Communications</div>
+          <p style="color: var(--text-on-dark-muted); font-size: 0.875rem;">Building tools for the messages that matter.</p>
+        </div>
+        <div>
+          <h4 style="color: var(--white); margin-bottom: 1rem; font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase;">Company</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 0.5rem;"><a href="about.html" style="color: var(--text-on-dark-muted);">About Us</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="insights.html" style="color: var(--text-on-dark-muted);">Insights</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="partners.html" style="color: var(--text-on-dark-muted);">Partners</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="contact.html" style="color: var(--text-on-dark-muted);">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: var(--white); margin-bottom: 1rem; font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase;">Products</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 0.5rem;"><a href="https://nexus-ariele.vercel.app" target="_blank" style="color: var(--gold);">Nexus (B2B SMS)</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="https://goodpal-ariele.vercel.app" target="_blank" style="color: var(--gold);">GoodPal (B2C Chat)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: var(--white); margin-bottom: 1rem; font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase;">Legal</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 0.5rem;"><a href="privacy.html" style="color: var(--text-on-dark-muted);">Privacy Policy</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="terms.html" style="color: var(--text-on-dark-muted);">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="border-top: 1px solid var(--border-dark); padding-top: 2rem; text-align: center; color: var(--text-on-dark-muted); font-size: 0.875rem;">
+        <p>&copy; 2026 Ariele Communications. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      if(toggle && menu) {
+        toggle.addEventListener('click', () => {
+          menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+      }
+    });
+  </script>
+</body>
+</html>

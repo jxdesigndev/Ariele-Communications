@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing — GoodPal</title>
+  <meta name="description" content="Simple, transparent pricing for real human conversation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="https://ariele-communications.vercel.app" target="_blank" class="nav-back">&larr; Ariele</a>
+        <a href="index.html" class="nav-brand">GoodPal</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topics.html">Topics</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="pricing.html" class="active">Pricing</a></li>
+        <li><a href="companion.html">Become a Companion</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="trial.html" class="nav-login">Login</a>
+        <a href="trial.html" class="btn btn-gold">Start Free Trial</a>
+        <button class="menu-toggle" id="menu-toggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="topics.html">Topics</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="pricing.html" class="active">Pricing</a></li>
+      <li><a href="companion.html">Become a Companion</a></li>
+      <li class="mobile-login"><a href="trial.html">Login</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero hero-light animate-on-scroll">
+      <div class="container hero-content text-center">
+        <h1>Pay for the conversation<br>time you actually want.</h1>
+        <p class="hero-subtitle text-muted mx-auto">Subscribers get guaranteed slots and priority matching. Top up with extra session time whenever a conversation runs long.</p>
+      </div>
+    </section>
+
+    <!-- PRICING GRID -->
+    <section class="section section-white pt-0 animate-on-scroll">
+      <div class="container">
+        
+        <div class="pricing-grid mb-xl">
+          <div class="pricing-cell">
+            <span class="tag tag-white mb-md">Starter</span>
+            <div class="price-amount">$10</div>
+            <div class="price-period">per month</div>
+            <ul class="feature-list mt-md">
+              <li>30 min/day, 3 days/week</li>
+              <li>Scheduled sessions</li>
+              <li>Topic matching</li>
+              <li>Session summary</li>
+            </ul>
+            <a href="trial.html" class="btn btn-outline-black mt-lg w-full text-center" style="justify-content:center;">Get Started</a>
+          </div>
+          
+          <div class="pricing-cell highlight">
+            <span class="tag tag-gold mb-md">Daily</span>
+            <div class="price-amount text-gold">$30</div>
+            <div class="price-period text-muted-dark">per month</div>
+            <ul class="feature-list feature-list-dark mt-md">
+              <li>1 hr/day, 5 days/week</li>
+              <li>Scheduled + on-demand</li>
+              <li>Priority matching</li>
+              <li>Topic matching</li>
+              <li>Session summary</li>
+            </ul>
+            <a href="trial.html" class="btn btn-gold mt-lg w-full text-center" style="justify-content:center;">Get Started</a>
+          </div>
+          
+          <div class="pricing-cell">
+            <span class="tag tag-white mb-md">Premium</span>
+            <div class="price-amount">$60</div>
+            <div class="price-period">per month</div>
+            <ul class="feature-list mt-md">
+              <li>2 hrs/day, 5 days/week</li>
+              <li>Scheduled + on-demand</li>
+              <li>Priority matching</li>
+              <li>Preferred companion</li>
+              <li>Session summary</li>
+            </ul>
+            <a href="trial.html" class="btn btn-outline-black mt-lg w-full text-center" style="justify-content:center;">Get Started</a>
+          </div>
+          
+          <div class="pricing-cell">
+            <span class="tag tag-gold mb-md">Custom</span>
+            <div class="price-amount">Flexible</div>
+            <div class="price-period">your schedule, your budget</div>
+            <ul class="feature-list mt-md">
+              <li>Choose hours per day</li>
+              <li>Choose days per week</li>
+              <li>Set a budget that works</li>
+              <li>Companion matched to schedule</li>
+              <li>All features included</li>
+            </ul>
+            <a href="trial.html" class="btn btn-outline-black mt-lg w-full text-center" style="justify-content:center;">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- EXTRA TIME CARD -->
+        <div class="card card-white border-light mb-xl">
+          <div class="grid-2 align-center">
+            <div>
+              <h3 class="mb-xs">Extra session time</h3>
+              <p class="text-muted text-sm">When a conversation is too good to stop, extend it. Billed per minute at your plan rate, transparently.</p>
+            </div>
+            <div class="rates-flex">
+              <div class="rate-box">
+                <div class="rate-price">$0.03<span>/min</span></div>
+                <div class="rate-label">Starter</div>
+              </div>
+              <div class="rate-box">
+                <div class="rate-price">$0.025<span>/min</span></div>
+                <div class="rate-label">Daily & Premium</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section animate-on-scroll">
+      <div class="container container-narrow">
+        <div class="gold-line center-line"></div>
+        <h2 class="text-center mb-xl">Frequently Asked Questions</h2>
+        
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">
+              Can I cancel anytime?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, there are no long-term contracts. You can cancel your subscription at any time from your account settings. You will continue to have access until the end of your current billing period.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              What if my companion doesn't show up?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>This is rare, but if a companion misses a scheduled session, you get that time fully refunded to your account, plus priority rebooking for your next session.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Can I request the same companion again?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Premium plan subscribers have the ability to lock in a preferred companion for their regular scheduled sessions, subject to the companion's availability.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              How does the free trial work?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>You get one hour of conversation time per day for three days. No credit card is required to sign up. You can test out the platform, speak with real companions, and decide if GoodPal is right for you before ever paying.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              What payment methods do you accept?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>We accept all major credit and debit cards, as well as select mobile money options and local bank transfers for our members in Africa.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Can I switch plans later?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely. You can upgrade or downgrade your plan at any time. Any changes will be prorated automatically based on your billing cycle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-gold-pale text-center">
+      <div class="container container-narrow">
+        <h2 class="mb-md">Experience it yourself.</h2>
+        <p class="text-muted mb-lg">Start your free 3-day trial and have your first real conversation today.</p>
+        <a href="trial.html" class="btn btn-black">Start Free Trial</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="grid-footer">
+        <div class="footer-brand-col">
+          <div class="footer-logo">GoodPal</div>
+          <p class="footer-tagline">GoodPal is a product of <a href="https://ariele-communications.vercel.app" target="_blank">Ariele Communications</a>.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="topics.html">Topics</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Join Us</h4>
+          <ul>
+            <li><a href="trial.html">Start Free Trial</a></li>
+            <li><a href="companion.html">Become a Companion</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="https://ariele-communications.vercel.app/privacy.html" target="_blank">Privacy Policy</a></li>
+            <li><a href="https://ariele-communications.vercel.app/terms.html" target="_blank">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ariele Communications. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

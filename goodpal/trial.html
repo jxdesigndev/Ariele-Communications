@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Your Free Trial — GoodPal</title>
+  <meta name="description" content="Try GoodPal free for 3 days. One hour per day. No payment required.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light">
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="https://ariele-communications.vercel.app" target="_blank" class="nav-back">&larr; Ariele</a>
+        <a href="index.html" class="nav-brand">GoodPal</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topics.html">Topics</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="companion.html">Become a Companion</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="trial.html" class="nav-login">Login</a>
+        <a href="trial.html" class="btn btn-gold">Start Free Trial</a>
+        <button class="menu-toggle" id="menu-toggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="topics.html">Topics</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="companion.html">Become a Companion</a></li>
+      <li class="mobile-login"><a href="trial.html">Login</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- TRIAL FORM SECTION -->
+    <section class="section animate-on-scroll">
+      <div class="container">
+        
+        <div class="text-center mb-lg">
+          <span class="eyebrow text-gold">INVITATION</span>
+          <h1>Start Your Free Trial</h1>
+          <p class="text-lg text-muted mt-sm" style="font-family: var(--font-display); font-style: italic;">Experience the depth of human connection.</p>
+        </div>
+        
+        <div class="form-card mx-auto">
+          <form id="trial-form" onsubmit="event.preventDefault(); alert('Free trial requested! (This is a frontend demo)');">
+            <div class="grid-2 mb-md">
+              <div class="form-group">
+                <label for="fullName">FULL NAME</label>
+                <input type="text" id="fullName" placeholder="e.g. Julian Vane" required>
+              </div>
+              <div class="form-group">
+                <label for="email">EMAIL ADDRESS</label>
+                <input type="email" id="email" placeholder="julian@example.com" required>
+              </div>
+            </div>
+            
+            <div class="form-group mb-lg">
+              <label for="phone">PHONE NUMBER (optional)</label>
+              <input type="tel" id="phone" placeholder="+1 (555) 000-0000">
+            </div>
+            
+            <div class="form-group mb-lg">
+              <label>PREFERRED TOPICS</label>
+              <div class="topics-cloud mt-sm" id="topic-selector">
+                <span class="topic-pill selectable-pill">Career & Business</span>
+                <span class="topic-pill selectable-pill">Books & Ideas</span>
+                <span class="topic-pill selectable-pill">Relationships</span>
+                <span class="topic-pill selectable-pill">Mental Health</span>
+                <span class="topic-pill selectable-pill">Faith & Spirituality</span>
+                <span class="topic-pill selectable-pill">Current Events</span>
+                <span class="topic-pill selectable-pill">Movies & Storytelling</span>
+                <span class="topic-pill selectable-pill">Language Practice</span>
+              </div>
+            </div>
+            
+            <div class="form-group mb-xl">
+              <label for="prefTime">PREFERRED CONVERSATION TIME</label>
+              <select id="prefTime" class="form-select">
+                <option value="flexible">Flexible</option>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+              </select>
+            </div>
+            
+            <button type="submit" class="btn btn-gold w-full text-center" style="justify-content:center; padding: 1rem;">
+              START MY 3-DAY FREE TRIAL
+            </button>
+            
+            <p class="text-center text-sm text-muted mt-md">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px; margin-top:-2px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              No payment required. Your trial starts immediately after signup.
+            </p>
+          </form>
+        </div>
+        
+        <!-- TRUST BADGES -->
+        <div class="grid-3 mt-xl container-narrow mx-auto border-top pt-xl">
+          <div class="text-center">
+            <h4 class="text-xs text-muted mb-xs" style="text-transform: uppercase; letter-spacing: 0.1em;">Dedicated Mentor</h4>
+            <p class="text-sm text-muted-dark" style="color: var(--text-on-light-muted);">Your GoodPal is matched to your specific preferred topics and tone.</p>
+          </div>
+          <div class="text-center">
+            <h4 class="text-xs text-muted mb-xs" style="text-transform: uppercase; letter-spacing: 0.1em;">Secure Privacy</h4>
+            <p class="text-sm text-muted-dark" style="color: var(--text-on-light-muted);">Encrypted dialogues designed for radical honesty and deep reflection.</p>
+          </div>
+          <div class="text-center">
+            <h4 class="text-xs text-muted mb-xs" style="text-transform: uppercase; letter-spacing: 0.1em;">Global Insight</h4>
+            <p class="text-sm text-muted-dark" style="color: var(--text-on-light-muted);">Companions from diverse backgrounds bringing real lived experience.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="grid-footer">
+        <div class="footer-brand-col">
+          <div class="footer-logo">GoodPal</div>
+          <p class="footer-tagline">GoodPal is a product of <a href="https://ariele-communications.vercel.app" target="_blank">Ariele Communications</a>.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="topics.html">Topics</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Join Us</h4>
+          <ul>
+            <li><a href="trial.html">Start Free Trial</a></li>
+            <li><a href="companion.html">Become a Companion</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="https://ariele-communications.vercel.app/privacy.html" target="_blank">Privacy Policy</a></li>
+            <li><a href="https://ariele-communications.vercel.app/terms.html" target="_blank">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ariele Communications. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script>
+    // Specific logic for topic pills selection on trial page
+    document.addEventListener('DOMContentLoaded', () => {
+      const pills = document.querySelectorAll('.selectable-pill');
+      pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          pill.classList.toggle('selected');
+          if (pill.classList.contains('selected')) {
+            pill.style.background = 'var(--gold)';
+            pill.style.color = 'var(--black)';
+            pill.style.borderColor = 'var(--gold)';
+          } else {
+            pill.style.background = '';
+            pill.style.color = '';
+            pill.style.borderColor = '';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus — B2B SMS Communication Platform</title>
+  <meta name="description" content="Reach your entire community instantly. Built for schools and churches in Nigeria.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION (Dark for Nexus) -->
+  <nav class="nav" style="background: rgba(10,10,10,0.95); backdrop-filter: blur(10px); color: var(--white); border-bottom: 1px solid var(--border-dark);">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="https://ariele-communications.vercel.app" target="_blank" class="nav-back" style="color: var(--text-on-dark-muted); font-size: 0.875rem; margin-right: 1.5rem;">&larr; Ariele</a>
+        <a href="index.html" class="nav-brand" style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; letter-spacing: 1px; color: var(--white);">Nexus</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active" style="color: var(--gold);">Home</a></li>
+        <li><a href="schools.html" style="color: var(--text-on-dark);">Schools</a></li>
+        <li><a href="churches.html" style="color: var(--text-on-dark);">Churches</a></li>
+        <li><a href="how-it-works.html" style="color: var(--text-on-dark);">How It Works</a></li>
+        <li><a href="pricing.html" style="color: var(--text-on-dark);">Pricing</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="get-started.html" class="nav-login" style="color: var(--text-on-dark); margin-right: 1.5rem; font-size: 0.875rem; font-weight: 500;">Login</a>
+        <a href="get-started.html" class="btn btn-gold" style="background: var(--gold); color: var(--black); padding: 0.6rem 1.25rem; border-radius: var(--radius); font-weight: 600; font-size: 0.875rem;">Get Started</a>
+        <button class="menu-toggle" id="menu-toggle" style="color: var(--white);">
+          <span style="background-color: var(--white);"></span>
+          <span style="background-color: var(--white);"></span>
+          <span style="background-color: var(--white);"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu" style="background: var(--black); color: var(--white);">
+    <ul style="padding: 2rem;">
+      <li style="margin-bottom: 1rem;"><a href="index.html" style="color: var(--gold); font-size: 1.25rem; font-weight: 500;">Home</a></li>
+      <li style="margin-bottom: 1rem;"><a href="schools.html" style="color: var(--text-on-dark); font-size: 1.25rem; font-weight: 500;">Schools</a></li>
+      <li style="margin-bottom: 1rem;"><a href="churches.html" style="color: var(--text-on-dark); font-size: 1.25rem; font-weight: 500;">Churches</a></li>
+      <li style="margin-bottom: 1rem;"><a href="how-it-works.html" style="color: var(--text-on-dark); font-size: 1.25rem; font-weight: 500;">How It Works</a></li>
+      <li style="margin-bottom: 1rem;"><a href="pricing.html" style="color: var(--text-on-dark); font-size: 1.25rem; font-weight: 500;">Pricing</a></li>
+      <li style="margin-top: 2rem;"><a href="get-started.html" style="color: var(--text-on-dark-muted);">Login</a></li>
+    </ul>
+  </div>
+
+  <main style="padding-top: var(--nav-height);">
+    <!-- HERO SECTION -->
+    <section class="hero hero-dark animate-on-scroll" style="background: var(--black); color: var(--white); padding: 6rem 0; min-height: 80vh; display: flex; align-items: center; border-bottom: 4px solid var(--gold);">
+      <div class="container hero-content text-center" style="max-width: 900px;">
+        <span class="eyebrow" style="color: var(--gold); font-size: 0.875rem; letter-spacing: 0.15em; font-weight: 600; display: block; margin-bottom: 1.5rem;">NEXUS &mdash; BY ARIELE COMMUNICATIONS</span>
+        <h1 style="font-family: var(--font-display); font-size: clamp(3rem, 6vw, 4.5rem); line-height: 1.1; margin-bottom: 1.5rem;">Reach your <em style="color: var(--gold); font-style: italic;">entire community</em> instantly.</h1>
+        <p class="hero-subtitle" style="color: var(--text-on-dark-muted); font-size: 1.25rem; max-width: 600px; margin: 0 auto 2.5rem auto; line-height: 1.6;">A robust, high-deliverability SMS platform designed specifically for schools and churches in Nigeria.</p>
+        <div class="btn-group" style="display: flex; gap: 1rem; justify-content: center;">
+          <a href="get-started.html" class="btn btn-gold" style="background: var(--gold); color: var(--black); padding: 1rem 2rem; border-radius: var(--radius); font-weight: 600;">Get Started</a>
+          <a href="how-it-works.html" class="btn btn-outline" style="border: 1px solid var(--border-dark); color: var(--white); padding: 1rem 2rem; border-radius: var(--radius); font-weight: 600;">How It Works</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TWO SOLUTIONS SECTION -->
+    <section class="section animate-on-scroll" style="padding: 6rem 0; background: var(--white-off);">
+      <div class="container" style="max-width: 1000px;">
+        <div class="text-center" style="margin-bottom: 4rem;">
+          <div style="width: 60px; height: 2px; background: var(--gold); margin: 0 auto 1.5rem auto;"></div>
+          <h2 style="font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 1rem;">One platform. Two distinct solutions.</h2>
+          <p style="color: var(--text-on-light-muted); max-width: 600px; margin: 0 auto;">We built Nexus to solve the specific communication challenges of Nigerian institutions.</p>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+          <!-- School Card -->
+          <div style="background: var(--white); padding: 3rem; border-radius: var(--radius-lg); border-top: 4px solid var(--black); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+            <h3 style="font-family: var(--font-display); font-size: 1.75rem; margin-bottom: 1rem;">Nexus for Schools</h3>
+            <p style="color: var(--text-on-light-muted); margin-bottom: 2rem;">Keep parents informed about grades, attendance, emergencies, and fee payments with guaranteed delivery.</p>
+            <a href="schools.html" style="color: var(--black); font-weight: 600; display: inline-flex; align-items: center;">Learn More &rarr;</a>
+          </div>
+          
+          <!-- Church Card -->
+          <div style="background: var(--white); padding: 3rem; border-radius: var(--radius-lg); border-top: 4px solid var(--gold); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+            <h3 style="font-family: var(--font-display); font-size: 1.75rem; margin-bottom: 1rem;">Nexus for Churches</h3>
+            <p style="color: var(--text-on-light-muted); margin-bottom: 2rem;">Connect with your congregation through daily devotionals, event reminders, and secure tithe acknowledgments.</p>
+            <a href="churches.html" style="color: var(--gold-dim); font-weight: 600; display: inline-flex; align-items: center;">Learn More &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY NEXUS SECTION -->
+    <section class="section animate-on-scroll" style="padding: 6rem 0; background: var(--black); color: var(--white);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+          <div>
+            <span style="color: var(--gold); font-size: 0.875rem; letter-spacing: 0.15em; font-weight: 600; display: block; margin-bottom: 1rem;">THE ADVANTAGE</span>
+            <div style="width: 60px; height: 2px; background: var(--gold); margin-bottom: 1.5rem;"></div>
+            <h2 style="font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 1.5rem;">Built for reliability in Nigeria.</h2>
+            <p style="color: var(--text-on-dark-muted); margin-bottom: 2rem;">Generic SMS gateways fail when networks are congested. We bypass standard routes to ensure your message arrives.</p>
+          </div>
+          
+          <div style="display: grid; gap: 2rem;">
+            <div style="border-left: 2px solid var(--gold); padding-left: 1.5rem;">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; font-weight: 600;">99.9% Deliverability</h4>
+              <p style="color: var(--text-on-dark-muted); font-size: 0.9rem;">Direct connections to MTN, Airtel, Glo, and 9mobile.</p>
+            </div>
+            <div style="border-left: 2px solid var(--gold); padding-left: 1.5rem;">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; font-weight: 600;">DND Bypass</h4>
+              <p style="color: var(--text-on-dark-muted); font-size: 0.9rem;">Approved transactional routes to reach numbers on Do Not Disturb.</p>
+            </div>
+            <div style="border-left: 2px solid var(--gold); padding-left: 1.5rem;">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; font-weight: 600;">Custom Sender ID</h4>
+              <p style="color: var(--text-on-dark-muted); font-size: 0.9rem;">Send messages using your institution's name.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL PREVIEW -->
+    <section class="section animate-on-scroll" style="padding: 6rem 0; background: var(--white); text-center">
+      <div class="container" style="max-width: 800px; text-align: center;">
+        <div style="font-family: var(--font-display); font-size: 2rem; font-style: italic; color: var(--black); margin-bottom: 2rem; line-height: 1.4;">"Since switching to Nexus, our parents actually receive emergency updates immediately. The delivery reports prove it."</div>
+        <div style="font-weight: 600; color: var(--gold-dim);">— Principal, Heritage Academy (Enugu)</div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="section animate-on-scroll" style="padding: 6rem 0; background: var(--gold); color: var(--black); text-align: center;">
+      <div class="container" style="max-width: 600px;">
+        <h2 style="font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 1rem;">Ready to upgrade your communication?</h2>
+        <p style="margin-bottom: 2.5rem; opacity: 0.8; font-weight: 500;">Set up your account in minutes. First 100 SMS free.</p>
+        <a href="get-started.html" style="background: var(--black); color: var(--white); padding: 1rem 2rem; border-radius: var(--radius); font-weight: 600; display: inline-block;">Get Started Now</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" style="background: var(--black); color: var(--text-on-dark); padding: 4rem 0 2rem 0; border-top: 1px solid var(--border-dark);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+        <div>
+          <div style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; color: var(--white); margin-bottom: 1rem;">Nexus</div>
+          <p style="color: var(--text-on-dark-muted); font-size: 0.875rem;">Nexus is a product of <a href="https://ariele-communications.vercel.app" target="_blank" style="color: var(--gold);">Ariele Communications</a>.</p>
+        </div>
+        <div>
+          <h4 style="color: var(--white); margin-bottom: 1rem; font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase;">Solutions</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 0.5rem;"><a href="schools.html" style="color: var(--text-on-dark-muted);">For Schools</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="churches.html" style="color: var(--text-on-dark-muted);">For Churches</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="pricing.html" style="color: var(--text-on-dark-muted);">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: var(--white); margin-bottom: 1rem; font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase;">Legal</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 0.5rem;"><a href="https://ariele-communications.vercel.app/privacy.html" target="_blank" style="color: var(--text-on-dark-muted);">Privacy Policy</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="https://ariele-communications.vercel.app/terms.html" target="_blank" style="color: var(--text-on-dark-muted);">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="border-top: 1px solid var(--border-dark); padding-top: 2rem; text-align: center; color: var(--text-on-dark-muted); font-size: 0.875rem;">
+        <p>&copy; 2026 Ariele Communications. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script>
+    // Add simple active state handling to menu toggle since main.js might be incomplete
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      if(toggle && menu) {
+        toggle.addEventListener('click', () => {
+          menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+      }
+    });
+  </script>
+</body>
+</html>

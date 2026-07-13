@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing — Nexus</title>
+  <meta name="description" content="Simple, transparent SMS pricing. No hidden fees.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" style="background: rgba(10,10,10,0.95); backdrop-filter: blur(10px); color: var(--white); border-bottom: 1px solid var(--border-dark);">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="https://ariele-communications.vercel.app" target="_blank" class="nav-back" style="color: var(--text-on-dark-muted); font-size: 0.875rem; margin-right: 1.5rem;">&larr; Ariele</a>
+        <a href="index.html" class="nav-brand" style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; letter-spacing: 1px; color: var(--white);">Nexus</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" style="color: var(--text-on-dark);">Home</a></li>
+        <li><a href="schools.html" style="color: var(--text-on-dark);">Schools</a></li>
+        <li><a href="churches.html" style="color: var(--text-on-dark);">Churches</a></li>
+        <li><a href="how-it-works.html" style="color: var(--text-on-dark);">How It Works</a></li>
+        <li><a href="pricing.html" class="active" style="color: var(--gold);">Pricing</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="get-started.html" class="nav-login" style="color: var(--text-on-dark); margin-right: 1.5rem; font-size: 0.875rem; font-weight: 500;">Login</a>
+        <a href="get-started.html" class="btn btn-gold" style="background: var(--gold); color: var(--black); padding: 0.6rem 1.25rem; border-radius: var(--radius); font-weight: 600; font-size: 0.875rem;">Get Started</a>
+        <button class="menu-toggle" id="menu-toggle" style="color: var(--white);">
+          <span style="background-color: var(--white);"></span>
+          <span style="background-color: var(--white);"></span>
+          <span style="background-color: var(--white);"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu" style="background: var(--black); color: var(--white);">
+    <ul style="padding: 2rem;">
+      <li style="margin-bottom: 1rem;"><a href="index.html" style="color: var(--text-on-dark); font-size: 1.25rem; font-weight: 500;">Home</a></li>
+      <li style="margin-bottom: 1rem;"><a href="schools.html" style="color: var(--text-on-dark); font-size: 1.25rem; font-weight: 500;">Schools</a></li>
+      <li style="margin-bottom: 1rem;"><a href="churches.html" style="color: var(--text-on-dark); font-size: 1.25rem; font-weight: 500;">Churches</a></li>
+      <li style="margin-bottom: 1rem;"><a href="how-it-works.html" style="color: var(--text-on-dark); font-size: 1.25rem; font-weight: 500;">How It Works</a></li>
+      <li style="margin-bottom: 1rem;"><a href="pricing.html" style="color: var(--gold); font-size: 1.25rem; font-weight: 500;">Pricing</a></li>
+      <li style="margin-top: 2rem;"><a href="get-started.html" style="color: var(--text-on-dark-muted);">Login</a></li>
+    </ul>
+  </div>
+
+  <main style="padding-top: var(--nav-height);">
+    <!-- HERO SECTION -->
+    <section class="hero hero-dark animate-on-scroll" style="background: var(--black); color: var(--white); padding: 6rem 0;">
+      <div class="container hero-content text-center" style="max-width: 800px;">
+        <h1 style="font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 1.5rem;">Pay only for what you send.</h1>
+        <p class="hero-subtitle" style="color: var(--text-on-dark-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto 2.5rem auto;">No monthly fees. No software costs. Just clear, volume-based pricing for SMS delivery.</p>
+      </div>
+    </section>
+
+    <!-- PRICING TIERS -->
+    <section class="section animate-on-scroll" style="padding: 6rem 0; background: var(--white-off);">
+      <div class="container">
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto;">
+          
+          <div style="background: var(--white); padding: 3rem; border-radius: var(--radius-lg); border-top: 4px solid var(--black); box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center;">
+            <h3 style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.5rem;">Standard Tier</h3>
+            <p style="color: var(--text-on-light-muted); margin-bottom: 2rem; font-size: 0.9rem;">1,000 – 49,999 units</p>
+            <div style="font-size: 2.5rem; font-weight: 700; color: var(--black); margin-bottom: 2rem;">₦3.50<span style="font-size: 1rem; color: var(--text-on-light-muted); font-weight: 400;">/unit</span></div>
+            <ul style="list-style: none; padding: 0; text-align: left; margin-bottom: 2.5rem;">
+              <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--gold);">✓</span> Custom Sender ID included
+              </li>
+              <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--gold);">✓</span> Full delivery reports
+              </li>
+              <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--gold);">✓</span> Lifetime unit validity
+              </li>
+            </ul>
+            <a href="get-started.html" style="background: var(--black); color: var(--white); padding: 1rem 2rem; border-radius: var(--radius); font-weight: 600; display: inline-block; width: 100%;">Buy Units</a>
+          </div>
+          
+          <div style="background: var(--black); padding: 3rem; border-radius: var(--radius-lg); border-top: 4px solid var(--gold); box-shadow: 0 10px 40px rgba(0,0,0,0.15); text-align: center; color: var(--white); transform: scale(1.05); z-index: 1;">
+            <h3 style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--gold);">Bulk Tier</h3>
+            <p style="color: var(--text-on-dark-muted); margin-bottom: 2rem; font-size: 0.9rem;">50,000+ units</p>
+            <div style="font-size: 2.5rem; font-weight: 700; color: var(--gold); margin-bottom: 2rem;">₦3.00<span style="font-size: 1rem; color: var(--text-on-dark-muted); font-weight: 400;">/unit</span></div>
+            <ul style="list-style: none; padding: 0; text-align: left; margin-bottom: 2.5rem;">
+              <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--gold);">✓</span> Custom Sender ID included
+              </li>
+              <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--gold);">✓</span> Full delivery reports
+              </li>
+              <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--gold);">✓</span> Priority routing
+              </li>
+              <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--gold);">✓</span> Lifetime unit validity
+              </li>
+            </ul>
+            <a href="get-started.html" style="background: var(--gold); color: var(--black); padding: 1rem 2rem; border-radius: var(--radius); font-weight: 600; display: inline-block; width: 100%;">Buy Units</a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- NETWORK CHARGES -->
+    <section class="section animate-on-scroll" style="padding: 4rem 0; background: var(--white);">
+      <div class="container container-narrow text-center">
+        <h3 style="font-family: var(--font-display); font-size: 1.75rem; margin-bottom: 1.5rem;">Network Charging Structure</h3>
+        <p style="color: var(--text-on-light-muted); margin-bottom: 2rem;">In Nigeria, different networks charge different unit rates per page of SMS (1 page = 160 characters).</p>
+        
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
+          <div style="padding: 1rem 2rem; border: 1px solid var(--border-light); border-radius: var(--radius);">
+            <strong>MTN:</strong> 1 Unit / page
+          </div>
+          <div style="padding: 1rem 2rem; border: 1px solid var(--border-light); border-radius: var(--radius);">
+            <strong>Airtel:</strong> 1 Unit / page
+          </div>
+          <div style="padding: 1rem 2rem; border: 1px solid var(--border-light); border-radius: var(--radius);">
+            <strong>Glo:</strong> 1 Unit / page
+          </div>
+          <div style="padding: 1rem 2rem; border: 1px solid var(--border-light); border-radius: var(--radius);">
+            <strong>9mobile:</strong> 1 Unit / page
+          </div>
+        </div>
+        <p style="color: var(--text-on-light-muted); font-size: 0.875rem; margin-top: 2rem;"><em>Note: DND (Do Not Disturb) lines require special routing and are charged at 2 units per page across all networks.</em></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" style="background: var(--black); color: var(--text-on-dark); padding: 4rem 0 2rem 0; border-top: 1px solid var(--border-dark);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+        <div>
+          <div style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; color: var(--white); margin-bottom: 1rem;">Nexus</div>
+          <p style="color: var(--text-on-dark-muted); font-size: 0.875rem;">Nexus is a product of <a href="https://ariele-communications.vercel.app" target="_blank" style="color: var(--gold);">Ariele Communications</a>.</p>
+        </div>
+        <div>
+          <h4 style="color: var(--white); margin-bottom: 1rem; font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase;">Solutions</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 0.5rem;"><a href="schools.html" style="color: var(--text-on-dark-muted);">For Schools</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="churches.html" style="color: var(--text-on-dark-muted);">For Churches</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="pricing.html" style="color: var(--text-on-dark-muted);">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: var(--white); margin-bottom: 1rem; font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase;">Legal</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 0.5rem;"><a href="https://ariele-communications.vercel.app/privacy.html" target="_blank" style="color: var(--text-on-dark-muted);">Privacy Policy</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="https://ariele-communications.vercel.app/terms.html" target="_blank" style="color: var(--text-on-dark-muted);">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="border-top: 1px solid var(--border-dark); padding-top: 2rem; text-align: center; color: var(--text-on-dark-muted); font-size: 0.875rem;">
+        <p>&copy; 2026 Ariele Communications. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      if(toggle && menu) {
+        toggle.addEventListener('click', () => {
+          menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+      }
+    });
+  </script>
+</body>
+</html>
