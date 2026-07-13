@@ -29,7 +29,7 @@
   --font-body: 'Inter', sans-serif;
 
   --nav-height: 72px;
-  --section-padding: 100px 0;
+  --section-padding: 120px 0;
   --container-max: 1200px;
   --container-narrow: 800px;
   --radius: 6px;
@@ -55,7 +55,7 @@ body {
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.8;
   color: var(--text-on-light);
   background: var(--white-off);
   overflow-x: hidden;
@@ -76,7 +76,7 @@ button, input, select, textarea {
 h1, h2, h3, h4, h5 {
   font-family: var(--font-display);
   font-weight: 500;
-  line-height: 1.15;
+  line-height: 1.2;
 }
 
 h1 { font-size: clamp(2.6rem, 5.5vw, 4.2rem); letter-spacing: -0.02em; }
@@ -920,10 +920,11 @@ section {
 .form-card {
   background: var(--white);
   border: 1px solid var(--border-light);
-  border-radius: var(--radius-lg);
+  border-radius: 16px;
   padding: 48px;
   max-width: 560px;
   margin: 0 auto;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
 
 .form-row {
@@ -943,9 +944,9 @@ section {
 }
 
 .form-label {
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-on-light-muted);
   margin-bottom: 10px;
@@ -955,12 +956,12 @@ section {
 .form-select,
 .form-textarea {
   width: 100%;
-  padding: 14px 16px;
-  border: 1px solid var(--border-light);
+  padding: 16px;
+  border: 1px solid rgba(0,0,0,0.1);
   border-radius: var(--radius);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--text-on-light);
-  background: var(--white-off);
+  background: #FAFAFA;
   transition: all var(--transition);
 }
 
@@ -968,7 +969,7 @@ section {
 .form-select:focus,
 .form-textarea:focus {
   border-color: var(--gold);
-  box-shadow: 0 0 0 3px rgba(201,168,76,0.1);
+  box-shadow: 0 0 0 4px rgba(201,168,76,0.15);
   background: var(--white);
 }
 
