@@ -66,10 +66,41 @@
 
         <!-- CONTENT -->
     <section class="section animate-on-scroll" style="padding: 6rem 0; background: var(--black); color: var(--white); min-height: 50vh;">
-      <div class="container container-narrow">
-        <h2 style="font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 1.5rem; line-height: 1.2;">Building for 99.9% Uptime in Nigeria</h2>
-        <p style="color: var(--text-on-dark-muted); font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">An architectural overview of how Nexus handles network timeouts and automatically falls back to secondary routing channels.</p>
-        <p style="color: var(--text-on-dark-muted); font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">We've engineered Nexus with redundancy at every layer. When primary SMS gateways fail, our system automatically reroutes messages through backup channels to ensure your critical communications are always delivered.</p>
+      <div class="container container-narrow" style="max-width: 800px;">
+        <span style="color: var(--gold); font-size: 0.875rem; letter-spacing: 0.15em; font-weight: 600; display: block; margin-bottom: 1rem; text-transform: uppercase;">Engineering / Nexus</span>
+        <h2 style="font-family: var(--font-display); font-size: 3rem; margin-bottom: 2rem; line-height: 1.2;">Building for 99.9% Uptime in Nigeria</h2>
+        
+        <img src="images/article_uptime.jpg" alt="Server Uptime and Infrastructure" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 10px 30px rgba(0,0,0,0.5); margin-bottom: 3rem; border: 1px solid var(--border-dark);">
+
+        <p style="color: var(--text-on-dark-muted); font-size: 1.15rem; line-height: 1.8; margin-bottom: 1.5rem;">Achieving 99.9% uptime is an engineering challenge anywhere in the world. Achieving it in Nigeria—where power grids fluctuate, fiber optic cables are routinely cut during road construction, and tier-1 telecom networks experience sudden congestion—requires an entirely different paradigm of systems architecture.</p>
+        
+        <p style="color: var(--text-on-dark-muted); font-size: 1.15rem; line-height: 1.8; margin-bottom: 1.5rem;">When we built <strong>Nexus</strong>, our B2B bulk SMS platform, we knew we couldn't rely on a single point of failure. A school sending out an emergency closure notice cannot wait four hours for an SMS aggregator to resolve a routing issue. The message must go through instantly.</p>
+        
+        <h3 style="font-family: var(--font-display); font-size: 2rem; margin-top: 3rem; margin-bottom: 1.5rem; color: var(--white);">Designing for Failure</h3>
+        
+        <p style="color: var(--text-on-dark-muted); font-size: 1.15rem; line-height: 1.8; margin-bottom: 1.5rem;">Our core engineering philosophy is simple: assume everything will fail eventually. Instead of trying to prevent the unpreventable, we built a system that gracefully degrades and automatically heals itself without human intervention.</p>
+        
+        <div style="background: var(--black-soft); padding: 2rem; border-left: 4px solid var(--gold); margin: 2rem 0; border-radius: 0 var(--radius) var(--radius) 0;">
+          <p style="color: var(--white); font-weight: 500; font-style: italic; margin: 0;">"If a primary SMS gateway experiences a latency spike exceeding 400 milliseconds, Nexus instantly shunts the queue to a secondary carrier before the user even realizes there was a delay."</p>
+        </div>
+
+        <p style="color: var(--text-on-dark-muted); font-size: 1.15rem; line-height: 1.8; margin-bottom: 1.5rem;">We achieve this through a highly distributed microservices architecture spread across multiple physical and cloud availability zones. If one node goes down, traffic is immediately re-routed.</p>
+        
+        <h3 style="font-family: var(--font-display); font-size: 2rem; margin-top: 3rem; margin-bottom: 1.5rem; color: var(--white);">Multi-Carrier Redundancy</h3>
+        
+        <p style="color: var(--text-on-dark-muted); font-size: 1.15rem; line-height: 1.8; margin-bottom: 1.5rem;">The most common point of failure in bulk messaging isn't the software; it's the telecom network itself. To solve this, Nexus maintains active, direct SMPP connections with all four major Nigerian telecom providers simultaneously.</p>
+        
+        <ul style="color: var(--text-on-dark-muted); font-size: 1.15rem; line-height: 1.8; margin-bottom: 2.5rem; padding-left: 1.5rem;">
+          <li style="margin-bottom: 1rem;"><strong>Health Checks:</strong> Nexus pings all carrier connections every 5 seconds to measure latency and packet loss.</li>
+          <li style="margin-bottom: 1rem;"><strong>Smart Routing:</strong> If the MTN gateway is congested but Airtel is clear, MTN-bound messages are dynamically routed through inter-network channels to ensure delivery.</li>
+          <li style="margin-bottom: 1rem;"><strong>Queue Management:</strong> High-priority transactional messages (like OTPs and emergency alerts) jump the queue over standard promotional broadcasts.</li>
+        </ul>
+
+        <p style="color: var(--text-on-dark-muted); font-size: 1.15rem; line-height: 1.8; margin-bottom: 3rem;">By embracing the reality of infrastructural instability and engineering around it, Ariele Communications guarantees that when an institution clicks "Send," the message arrives. Every single time.</p>
+        
+        <div style="text-align: center; border-top: 1px solid var(--border-dark); padding-top: 3rem;">
+          <a href="https://nex-xus.vercel.app" target="_blank" class="btn btn-gold" style="background: var(--gold); color: var(--black); padding: 1rem 2rem; border-radius: var(--radius); font-weight: 600; display: inline-block;">Learn More About Nexus</a>
+        </div>
       </div>
     </section>
   </main><!-- FOOTER -->
