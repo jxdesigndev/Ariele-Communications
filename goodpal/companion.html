@@ -26,7 +26,7 @@
         <li><a href="companion.html" class="active">Become a Companion</a></li>
       </ul>
       <div class="nav-right">
-        <a href="trial.html" class="nav-login">Login</a>
+        <a href="login.html" class="nav-login">Login</a>
         <a href="trial.html" class="btn btn-gold">Start Free Trial</a>
         <button class="menu-toggle" id="menu-toggle">
           <span></span><span></span><span></span>
@@ -43,7 +43,7 @@
       <li><a href="how-it-works.html">How It Works</a></li>
       <li><a href="pricing.html">Pricing</a></li>
       <li><a href="companion.html" class="active">Become a Companion</a></li>
-      <li class="mobile-login"><a href="trial.html">Login</a></li>
+      <li class="mobile-login"><a href="login.html">Login</a></li>
     </ul>
   </div>
 
@@ -152,7 +152,7 @@
         </div>
         
         <div class="form-card mx-auto bg-white">
-          <form id="companion-form" onsubmit="event.preventDefault(); alert('Application submitted! (This is a frontend demo)');">
+          <form id="companion-form">
             <div class="form-row">
               <div class="form-group">
                 <label for="compName" class="form-label">FULL NAME</label>
@@ -258,34 +258,5 @@
   </footer>
 
   <script src="js/main.js" defer></script>
-  <script>
-    // Specific logic for topic pills selection on companion page
-    document.addEventListener('DOMContentLoaded', () => {
-      const pills = document.querySelectorAll('.topic-pill-select');
-      let selectedCount = 0;
-      
-      pills.forEach(pill => {
-        pill.addEventListener('click', () => {
-          if (!pill.classList.contains('selected') && selectedCount >= 4) {
-            alert('Please select up to 4 topics.');
-            return;
-          }
-          
-          pill.classList.toggle('selected');
-          if (pill.classList.contains('selected')) {
-            pill.style.background = 'var(--gold)';
-            pill.style.color = 'var(--black)';
-            pill.style.borderColor = 'var(--gold)';
-            selectedCount++;
-          } else {
-            pill.style.background = '';
-            pill.style.color = '';
-            pill.style.borderColor = '';
-            selectedCount--;
-          }
-        });
-      });
-    });
-  </script>
 </body>
 </html>

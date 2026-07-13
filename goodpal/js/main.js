@@ -82,9 +82,18 @@
 
   // === 5. TOPIC PILL MULTI-SELECT ===
   const selectablePills = document.querySelectorAll('.topic-pill-select');
+  const maxPills = 4; // Companion limit
 
   selectablePills.forEach(function (pill) {
     pill.addEventListener('click', function () {
+      const formCard = pill.closest('.form-card');
+      if (formCard && formCard.querySelector('#companion-form')) {
+        const currentlySelected = formCard.querySelectorAll('.topic-pill-select.selected').length;
+        if (!pill.classList.contains('selected') && currentlySelected >= maxPills) {
+          alert('Please select up to 4 topics.');
+          return;
+        }
+      }
       pill.classList.toggle('selected');
     });
   });

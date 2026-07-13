@@ -26,7 +26,7 @@
         <li><a href="companion.html">Become a Companion</a></li>
       </ul>
       <div class="nav-right">
-        <a href="trial.html" class="nav-login">Login</a>
+        <a href="login.html" class="nav-login">Login</a>
         <a href="trial.html" class="btn btn-gold">Start Free Trial</a>
         <button class="menu-toggle" id="menu-toggle">
           <span></span><span></span><span></span>
@@ -43,7 +43,7 @@
       <li><a href="how-it-works.html">How It Works</a></li>
       <li><a href="pricing.html">Pricing</a></li>
       <li><a href="companion.html">Become a Companion</a></li>
-      <li class="mobile-login"><a href="trial.html">Login</a></li>
+      <li class="mobile-login"><a href="login.html">Login</a></li>
     </ul>
   </div>
 
@@ -61,7 +61,7 @@
             </div>
             
             <div class="form-card bg-white">
-          <form id="trial-form" onsubmit="event.preventDefault(); alert('Free trial requested! (This is a frontend demo)');">
+          <form id="trial-form">
             <div class="form-row">
               <div class="form-group">
                 <label for="fullName" class="form-label">FULL NAME</label>
@@ -167,25 +167,5 @@
   </footer>
 
   <script src="js/main.js" defer></script>
-  <script>
-    // Specific logic for topic pills selection on trial page
-    document.addEventListener('DOMContentLoaded', () => {
-      const pills = document.querySelectorAll('.topic-pill-select');
-      pills.forEach(pill => {
-        pill.addEventListener('click', () => {
-          pill.classList.toggle('selected');
-          if (pill.classList.contains('selected')) {
-            pill.style.background = 'var(--gold)';
-            pill.style.color = 'var(--black)';
-            pill.style.borderColor = 'var(--gold)';
-          } else {
-            pill.style.background = '';
-            pill.style.color = '';
-            pill.style.borderColor = '';
-          }
-        });
-      });
-    });
-  </script>
 </body>
 </html>
