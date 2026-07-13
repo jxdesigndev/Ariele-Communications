@@ -49,9 +49,9 @@
 
   <main>
     <!-- HERO SECTION -->
-    <section class="hero animate-on-scroll" style="background: linear-gradient(to right, rgba(250,250,248,0.95), rgba(250,250,248,0.7)), url('images/companion-bg.jpg') center/cover no-repeat; padding: 8rem 0 6rem 0; text-align: center; border-top: 2px solid var(--gold);">
+    <section class="hero hero-companion animate-on-scroll">
       <div class="container hero-content text-center">
-        <h1 class="text-white">Become a GoodPal<br>Companion.</h1>
+        <h1>Become a GoodPal<br>Companion.</h1>
         <p class="hero-subtitle text-muted-dark mx-auto mt-md">Get paid to have real conversations about topics you love.</p>
       </div>
     </section>
@@ -127,7 +127,7 @@
             </div>
           </div>
           
-          <div class="pt-xl" style="align-self: center;">
+          <div class="pt-xl self-center">
             <h3 class="text-white mb-md">This is real work.</h3>
             <p class="text-muted-dark mb-md">Companions are vetted, trained, and paid. This is not a volunteer position.</p>
             <ul class="feature-list feature-list-dark">
@@ -175,25 +175,25 @@
               </div>
             </div>
             
-            <div class="form-group mb-lg" style="margin-bottom: 20px;">
+            <div class="form-group mb-lg">
               <label class="form-label">TOPICS YOU'RE PASSIONATE ABOUT (Select up to 4)</label>
-              <div class="topics-cloud mt-sm" id="comp-topic-selector" style="display: flex; flex-wrap: wrap; gap: 8px;">
-                <span class="topic-pill comp-pill">Career & Business</span>
-                <span class="topic-pill comp-pill">Books & Ideas</span>
-                <span class="topic-pill comp-pill">Relationships</span>
-                <span class="topic-pill comp-pill">Mental Health</span>
-                <span class="topic-pill comp-pill">Faith & Spirituality</span>
-                <span class="topic-pill comp-pill">Current Events</span>
-                <span class="topic-pill comp-pill">Movies & Storytelling</span>
-                <span class="topic-pill comp-pill">Language Practice</span>
-                <span class="topic-pill comp-pill">Science & Technology</span>
-                <span class="topic-pill comp-pill">History</span>
-                <span class="topic-pill comp-pill">Sports</span>
-                <span class="topic-pill comp-pill">Parenting</span>
+              <div class="topic-pills mt-sm" id="comp-topic-selector">
+                <span class="topic-pill topic-pill-select">Career & Business</span>
+                <span class="topic-pill topic-pill-select">Books & Ideas</span>
+                <span class="topic-pill topic-pill-select">Relationships</span>
+                <span class="topic-pill topic-pill-select">Mental Health</span>
+                <span class="topic-pill topic-pill-select">Faith & Spirituality</span>
+                <span class="topic-pill topic-pill-select">Current Events</span>
+                <span class="topic-pill topic-pill-select">Movies & Storytelling</span>
+                <span class="topic-pill topic-pill-select">Language Practice</span>
+                <span class="topic-pill topic-pill-select">Science & Technology</span>
+                <span class="topic-pill topic-pill-select">History</span>
+                <span class="topic-pill topic-pill-select">Sports</span>
+                <span class="topic-pill topic-pill-select">Parenting</span>
               </div>
             </div>
             
-            <div class="form-group mb-lg" style="margin-bottom: 20px;">
+            <div class="form-group mb-lg">
               <label for="compHours" class="form-label">WEEKLY AVAILABILITY</label>
               <select id="compHours" class="form-select" required>
                 <option value="">Select your availability...</option>
@@ -204,12 +204,12 @@
               </select>
             </div>
             
-            <div class="form-group mb-xl" style="margin-bottom: 30px;">
+            <div class="form-group mb-xl">
               <label for="compBio" class="form-label">WHY WOULD YOU BE A GREAT COMPANION?</label>
               <textarea id="compBio" class="form-textarea" rows="4" placeholder="Tell us a bit about your background and why you enjoy deep conversations..." required></textarea>
             </div>
             
-            <button type="submit" class="btn btn-black w-full text-center" style="justify-content:center; padding: 1rem;">
+            <button type="submit" class="btn btn-black w-full text-center">
               SUBMIT APPLICATION
             </button>
           </form>
