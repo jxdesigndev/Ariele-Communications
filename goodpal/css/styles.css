@@ -283,7 +283,7 @@ section {
   border-bottom-color: var(--border-light);
 }
 
-.nav-inner {
+.nav-container {
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 0 32px;
@@ -324,7 +324,7 @@ section {
   gap: 32px;
 }
 
-.nav-link {
+.nav-links a {
   font-size: 0.85rem;
   font-weight: 400;
   color: var(--text-on-light-muted);
@@ -333,7 +333,7 @@ section {
   transition: color var(--transition);
 }
 
-.nav-link::after {
+.nav-links a::after {
   content: '';
   position: absolute;
   bottom: -4px;
@@ -344,13 +344,13 @@ section {
   transition: width var(--transition);
 }
 
-.nav-link:hover,
-.nav-link.active {
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--gold);
 }
 
-.nav-link.active::after,
-.nav-link:hover::after {
+.nav-links a.active::after,
+.nav-links a:hover::after {
   width: 100%;
 }
 
@@ -390,16 +390,18 @@ section {
 }
 
 /* Hamburger */
-.nav-hamburger {
+.menu-toggle {
   display: none;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
   padding: 4px;
   z-index: 1001;
+  background: transparent;
+  border: none;
 }
 
-.nav-hamburger span {
+.menu-toggle span {
   display: block;
   width: 22px;
   height: 2px;
@@ -408,18 +410,18 @@ section {
   transition: all var(--transition);
 }
 
-.nav-hamburger.active span:nth-child(1) {
+.menu-toggle.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
-.nav-hamburger.active span:nth-child(2) {
+.menu-toggle.active span:nth-child(2) {
   opacity: 0;
 }
-.nav-hamburger.active span:nth-child(3) {
+.menu-toggle.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* Mobile menu */
-.nav-mobile {
+.mobile-menu {
   display: none;
   position: fixed;
   top: var(--nav-height);
@@ -438,23 +440,19 @@ section {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.nav-mobile.open {
+.mobile-menu.open {
   display: flex;
   opacity: 1;
   transform: translateY(0);
 }
 
-.nav-mobile .nav-link {
+.mobile-menu a {
   font-size: 1.3rem;
   font-family: var(--font-display);
   font-weight: 500;
+  color: var(--text-on-light);
   padding: 16px 0;
   border-bottom: 1px solid var(--border-light);
-  color: var(--text-on-light);
-}
-
-.nav-mobile .nav-login {
-  font-size: 1.1rem;
   padding: 16px 0;
   color: var(--text-on-light-muted);
 }

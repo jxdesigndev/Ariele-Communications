@@ -248,7 +248,7 @@ section {
   box-shadow: 0 1px 24px rgba(0,0,0,0.3);
 }
 
-.nav__inner {
+.nav-container {
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 0 32px;
@@ -258,7 +258,7 @@ section {
   height: 72px;
 }
 
-.nav__brand {
+.nav-brand {
   font-family: var(--font-display);
   font-size: 1.25rem;
   font-weight: 500;
@@ -266,18 +266,18 @@ section {
   flex-shrink: 0;
 }
 
-.nav__brand .gold-dot {
+.nav-brand .gold-dot {
   color: var(--gold);
   margin-left: 2px;
 }
 
-.nav__links {
+.nav-links {
   display: flex;
   align-items: center;
   gap: 36px;
 }
 
-.nav__links a {
+.nav-links a {
   font-family: var(--font-body);
   font-size: 0.88rem;
   font-weight: 400;
@@ -286,22 +286,22 @@ section {
   letter-spacing: 0.01em;
 }
 
-.nav__links a:hover,
-.nav__links a.active {
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--gold);
 }
 
-.nav__cta {
+.nav-right {
   flex-shrink: 0;
 }
 
-.nav__cta .btn {
+.nav-right .btn {
   padding: 10px 24px;
   font-size: 0.85rem;
 }
 
 /* Mobile hamburger */
-.nav__hamburger {
+.menu-toggle {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -315,7 +315,7 @@ section {
   padding: 0;
 }
 
-.nav__hamburger span {
+.menu-toggle span {
   display: block;
   width: 24px;
   height: 2px;
@@ -324,20 +324,20 @@ section {
   border-radius: 2px;
 }
 
-.nav__hamburger.active span:nth-child(1) {
+.menu-toggle.active span:nth-child(1) {
   transform: rotate(45deg) translateY(5.5px);
 }
 
-.nav__hamburger.active span:nth-child(2) {
+.menu-toggle.active span:nth-child(2) {
   opacity: 0;
 }
 
-.nav__hamburger.active span:nth-child(3) {
+.menu-toggle.active span:nth-child(3) {
   transform: rotate(-45deg) translateY(-5.5px);
 }
 
 /* Mobile menu overlay */
-.nav__mobile {
+.mobile-menu {
   display: none;
   position: fixed;
   top: 72px;
@@ -353,23 +353,23 @@ section {
   gap: 32px;
 }
 
-.nav__mobile.open {
+.mobile-menu.open {
   display: flex;
 }
 
-.nav__mobile a {
+.mobile-menu a {
   font-family: var(--font-display);
   font-size: 1.8rem;
   color: var(--text-on-dark);
   transition: color var(--transition);
 }
 
-.nav__mobile a:hover,
-.nav__mobile a.active {
+.mobile-menu a:hover,
+.mobile-menu a.active {
   color: var(--gold);
 }
 
-.nav__mobile .btn {
+.mobile-menu .btn {
   margin-top: 16px;
 }
 
