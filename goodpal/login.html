@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — GoodPal</title>
+  <meta name="description" content="Log in to your GoodPal account.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light">
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="index.html" class="nav-brand"><img src="images/logo.jpg" alt="GoodPal" style="height: 48px; width: auto; border-radius: 4px;"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topics.html">Topics</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="companion.html">Become a Companion</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="login.html" class="nav-login active">Login</a>
+        <a href="trial.html" class="btn btn-gold">Start Free Trial</a>
+        <button class="menu-toggle" id="menu-toggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="topics.html">Topics</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="companion.html">Become a Companion</a></li>
+      <li class="mobile-login"><a href="login.html" class="active">Login</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <section class="section animate-on-scroll">
+      <div class="container container-narrow" style="max-width: 1000px;">
+        <div class="hero-split-container">
+          <div class="hero-split-bg" style="background-image: url('images/hero-bg.jpg');"></div>
+          <div class="hero-split-content">
+            <div class="mb-lg">
+              <span class="eyebrow text-gold d-block mb-sm">WELCOME BACK</span>
+              <h1 class="mb-sm">Log in to GoodPal</h1>
+              <p class="text-muted text-lg">Pick up exactly where you left off.</p>
+            </div>
+            
+            <div class="form-card bg-white">
+              <form id="login-form" onsubmit="event.preventDefault(); alert('Logged in! (This is a frontend demo)');">
+                <div class="form-group mb-md">
+                  <label for="email" class="form-label">EMAIL ADDRESS</label>
+                  <input type="email" id="email" class="form-input" placeholder="julian@example.com" required>
+                </div>
+                
+                <div class="form-group mb-xl">
+                  <label for="password" class="form-label">PASSWORD</label>
+                  <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+                  <div class="text-right mt-xs">
+                    <a href="#" class="text-xs text-gold hover-underline" style="text-decoration: none;">Forgot password?</a>
+                  </div>
+                </div>
+                
+                <button type="submit" class="btn btn-gold w-full text-center text-lg mb-md">Log In</button>
+                <div class="text-center text-sm text-muted">
+                  Don't have an account? <a href="trial.html" class="text-black" style="font-weight: 600; text-decoration: none;">Start Free Trial</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="grid-footer">
+        <div class="footer-brand-col">
+          <div class="footer-logo">GoodPal</div>
+          <p class="footer-tagline">GoodPal is a product of <a href="https://ariele-communications.vercel.app" target="_blank">Ariele Communications</a>.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="topics.html">Topics</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Join Us</h4>
+          <ul>
+            <li><a href="trial.html">Start Free Trial</a></li>
+            <li><a href="companion.html">Become a Companion</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="https://ariele-communications.vercel.app/privacy.html" target="_blank">Privacy Policy</a></li>
+            <li><a href="https://ariele-communications.vercel.app/terms.html" target="_blank">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ariele Communications. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

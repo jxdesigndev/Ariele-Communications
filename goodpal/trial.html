@@ -60,7 +60,7 @@
               <p class="text-muted text-lg">Experience the depth of human connection.</p>
             </div>
             
-            <div class="form-card form-card-transparent">
+            <div class="form-card bg-white">
           <form id="trial-form" onsubmit="event.preventDefault(); alert('Free trial requested! (This is a frontend demo)');">
             <div class="form-row">
               <div class="form-group">
@@ -102,7 +102,7 @@
               </select>
             </div>
             
-            <button type="submit" class="btn btn-gold btn-full">Begin Trial</button>
+            <button type="submit" class="btn btn-gold w-full text-center text-lg">Begin Trial</button>
           </form>
           </div>
           </div>
@@ -170,7 +170,7 @@
   <script>
     // Specific logic for topic pills selection on trial page
     document.addEventListener('DOMContentLoaded', () => {
-      const pills = document.querySelectorAll('.selectable-pill');
+      const pills = document.querySelectorAll('.topic-pill-select');
       pills.forEach(pill => {
         pill.addEventListener('click', () => {
           pill.classList.toggle('selected');
