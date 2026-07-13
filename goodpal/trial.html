@@ -65,23 +65,23 @@
           <form id="trial-form" onsubmit="event.preventDefault(); alert('Free trial requested! (This is a frontend demo)');">
             <div class="grid-2 mb-md">
               <div class="form-group">
-                <label for="fullName">FULL NAME</label>
-                <input type="text" id="fullName" placeholder="e.g. Julian Vane" required>
+                <label for="fullName" class="form-label">FULL NAME</label>
+                <input type="text" id="fullName" class="form-input" placeholder="e.g. Julian Vane" required>
               </div>
               <div class="form-group">
-                <label for="email">EMAIL ADDRESS</label>
-                <input type="email" id="email" placeholder="julian@example.com" required>
+                <label for="email" class="form-label">EMAIL ADDRESS</label>
+                <input type="email" id="email" class="form-input" placeholder="julian@example.com" required>
               </div>
             </div>
             
-            <div class="form-group mb-lg">
-              <label for="phone">PHONE NUMBER (optional)</label>
-              <input type="tel" id="phone" placeholder="+1 (555) 000-0000">
+            <div class="form-group mb-lg" style="margin-bottom: 20px;">
+              <label for="phone" class="form-label">PHONE NUMBER (optional)</label>
+              <input type="tel" id="phone" class="form-input" placeholder="+1 (555) 000-0000">
             </div>
             
-            <div class="form-group mb-lg">
-              <label>PREFERRED TOPICS</label>
-              <div class="topics-cloud mt-sm" id="topic-selector">
+            <div class="form-group mb-lg" style="margin-bottom: 20px;">
+              <label class="form-label">PREFERRED TOPICS</label>
+              <div class="topics-cloud mt-sm" id="topic-selector" style="display: flex; flex-wrap: wrap; gap: 8px;">
                 <span class="topic-pill selectable-pill">Career & Business</span>
                 <span class="topic-pill selectable-pill">Books & Ideas</span>
                 <span class="topic-pill selectable-pill">Relationships</span>
@@ -93,8 +93,8 @@
               </div>
             </div>
             
-            <div class="form-group mb-xl">
-              <label for="prefTime">PREFERRED CONVERSATION TIME</label>
+            <div class="form-group mb-xl" style="margin-bottom: 30px;">
+              <label for="prefTime" class="form-label">PREFERRED CONVERSATION TIME</label>
               <select id="prefTime" class="form-select">
                 <option value="flexible">Flexible</option>
                 <option value="morning">Morning</option>

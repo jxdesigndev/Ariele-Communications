@@ -156,29 +156,29 @@
           <form id="companion-form" onsubmit="event.preventDefault(); alert('Application submitted! (This is a frontend demo)');">
             <div class="grid-2 mb-md">
               <div class="form-group">
-                <label for="compName">FULL NAME</label>
-                <input type="text" id="compName" placeholder="e.g. Julian Vane" required>
+                <label for="compName" class="form-label">FULL NAME</label>
+                <input type="text" id="compName" class="form-input" placeholder="e.g. Julian Vane" required>
               </div>
               <div class="form-group">
-                <label for="compEmail">EMAIL ADDRESS</label>
-                <input type="email" id="compEmail" placeholder="julian@example.com" required>
+                <label for="compEmail" class="form-label">EMAIL ADDRESS</label>
+                <input type="email" id="compEmail" class="form-input" placeholder="julian@example.com" required>
               </div>
             </div>
             
             <div class="grid-2 mb-md">
               <div class="form-group">
-                <label for="compPhone">PHONE NUMBER</label>
-                <input type="tel" id="compPhone" placeholder="+1 (555) 000-0000" required>
+                <label for="compPhone" class="form-label">PHONE NUMBER</label>
+                <input type="tel" id="compPhone" class="form-input" placeholder="+1 (555) 000-0000" required>
               </div>
               <div class="form-group">
-                <label for="compLocation">LOCATION</label>
-                <input type="text" id="compLocation" placeholder="City, Country" required>
+                <label for="compLocation" class="form-label">LOCATION</label>
+                <input type="text" id="compLocation" class="form-input" placeholder="City, Country" required>
               </div>
             </div>
             
-            <div class="form-group mb-lg">
-              <label>TOPICS YOU'RE PASSIONATE ABOUT (Select up to 4)</label>
-              <div class="topics-cloud mt-sm" id="comp-topic-selector">
+            <div class="form-group mb-lg" style="margin-bottom: 20px;">
+              <label class="form-label">TOPICS YOU'RE PASSIONATE ABOUT (Select up to 4)</label>
+              <div class="topics-cloud mt-sm" id="comp-topic-selector" style="display: flex; flex-wrap: wrap; gap: 8px;">
                 <span class="topic-pill comp-pill">Career & Business</span>
                 <span class="topic-pill comp-pill">Books & Ideas</span>
                 <span class="topic-pill comp-pill">Relationships</span>
@@ -194,8 +194,8 @@
               </div>
             </div>
             
-            <div class="form-group mb-lg">
-              <label for="compHours">WEEKLY AVAILABILITY</label>
+            <div class="form-group mb-lg" style="margin-bottom: 20px;">
+              <label for="compHours" class="form-label">WEEKLY AVAILABILITY</label>
               <select id="compHours" class="form-select" required>
                 <option value="">Select your availability...</option>
                 <option value="5-10">5 - 10 hours</option>
@@ -205,9 +205,9 @@
               </select>
             </div>
             
-            <div class="form-group mb-xl">
-              <label for="compBio">WHY WOULD YOU BE A GREAT COMPANION?</label>
-              <textarea id="compBio" rows="4" placeholder="Tell us a bit about your background and why you enjoy deep conversations..." style="width:100%; border:1px solid var(--border-light); padding:1rem; border-radius:var(--radius); margin-top:8px; font-family:var(--font-body);" required></textarea>
+            <div class="form-group mb-xl" style="margin-bottom: 30px;">
+              <label for="compBio" class="form-label">WHY WOULD YOU BE A GREAT COMPANION?</label>
+              <textarea id="compBio" class="form-textarea" rows="4" placeholder="Tell us a bit about your background and why you enjoy deep conversations..." required></textarea>
             </div>
             
             <button type="submit" class="btn btn-black w-full text-center" style="justify-content:center; padding: 1rem;">

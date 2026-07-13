@@ -122,20 +122,20 @@ section {
 
 .grid-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
   gap: 60px;
   align-items: start;
 }
 
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 24px;
 }
 
 .grid-4 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
   gap: 0;
 }
 
@@ -709,7 +709,7 @@ section {
 /* === PRICING GRID === */
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
   border: 1px solid var(--border-light);
   border-radius: var(--radius);
   overflow: hidden;
@@ -1094,7 +1094,7 @@ section {
 /* === HOW IT WORKS: Comparison cards === */
 .compare-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
   gap: 32px;
 }
 
@@ -1393,7 +1393,13 @@ section {
 
 .footer-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 48px;
+  margin-bottom: 56px;
+}
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
   gap: 48px;
   margin-bottom: 56px;
 }
@@ -1558,7 +1564,7 @@ section {
 /* === COMPANION QUALITY CARDS === */
 .quality-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
   gap: 16px;
 }
 
@@ -1598,7 +1604,7 @@ section {
 /* === TRUST & SAFETY === */
 .safety-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
   gap: 32px;
 }
 
@@ -1625,10 +1631,43 @@ section {
   max-width: 100%;
 }
 
+/* === FEATURE STACK === */
+.feature-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feature-item-gold {
+  background: var(--white);
+  border-left: 4px solid var(--gold);
+  padding: 24px 32px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  box-shadow: 0 4px 12px rgba(10,10,10,0.03);
+  transition: all var(--transition);
+}
+
+.feature-item-gold:hover {
+  transform: translateX(4px);
+  box-shadow: 0 8px 24px rgba(201,168,76,0.08);
+}
+
+.feature-item-gold h3 {
+  font-size: 1.25rem;
+  margin-bottom: 6px;
+  color: var(--text-on-light);
+}
+
+.feature-item-gold p {
+  font-size: 0.95rem;
+  margin: 0;
+  color: var(--text-on-light-muted);
+}
+
 /* === COMPANION ROLE CARDS === */
 .role-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 20px;
 }
 

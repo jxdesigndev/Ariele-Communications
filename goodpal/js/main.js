@@ -90,13 +90,17 @@
   });
 
   // === 6. SCROLL-TRIGGERED FADE-IN ANIMATIONS ===
-  const fadeElements = document.querySelectorAll('.fade-in');
+  const fadeElements = document.querySelectorAll('.fade-in, .animate-on-scroll');
 
   if ('IntersectionObserver' in window && fadeElements.length > 0) {
     const fadeObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
+          // Add hero-animate for things that might need it
+          if (entry.target.classList.contains('animate-on-scroll')) {
+            entry.target.classList.add('hero-animate');
+          }
           fadeObserver.unobserve(entry.target);
         }
       });
@@ -112,6 +116,9 @@
     // Fallback: show all elements immediately
     fadeElements.forEach(function (el) {
       el.classList.add('visible');
+      if (el.classList.contains('animate-on-scroll')) {
+        el.classList.add('hero-animate');
+      }
     });
   }
 
