@@ -199,10 +199,13 @@ section {
 .btn-outline-black {
   background: transparent;
   color: var(--black);
-  border: 1px solid var(--border-light);
+  border: 2px solid var(--black);
+  font-weight: 500;
 }
 
 .btn-outline-black:hover {
+  background: var(--black);
+  color: var(--white);
   border-color: var(--black);
   transform: translateY(-2px);
 }
@@ -1904,6 +1907,47 @@ section {
 .pb-xl { padding-bottom: 64px; }
 
 .w-full { width: 100%; }
+.align-center { align-items: center; }
+
+/* Rates Flex (Pricing Page) */
+.rates-flex {
+  display: flex;
+  gap: 3rem;
+  justify-content: flex-end;
+}
+.rate-box {
+  text-align: right;
+}
+.rate-price {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+.rate-price span {
+  font-size: 1.1rem;
+  font-family: var(--font-body);
+  color: var(--black-light);
+}
+.rate-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: var(--black);
+}
+
+@media (max-width: 768px) {
+  .rates-flex {
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+  }
+  .rate-box {
+    text-align: left;
+  }
+}
 .mx-auto { margin-left: auto; margin-right: auto; }
 
 .visually-hidden {
@@ -2163,6 +2207,12 @@ section {
   background-color: rgba(201, 168, 76, 0.1);
   color: var(--gold-dim);
   border: 1px solid var(--border-gold);
+}
+
+.pricing-cell.highlighted .tag-gold {
+  background-color: rgba(201, 168, 76, 0.15);
+  color: var(--gold-light);
+  border-color: rgba(201, 168, 76, 0.4);
 }
 
 .tag-black {
