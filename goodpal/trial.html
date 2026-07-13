@@ -51,15 +51,17 @@
   <main>
     <!-- TRIAL FORM SECTION -->
     <section class="section animate-on-scroll">
-      <div class="container">
-        
-        <div class="text-center mb-lg">
-          <span class="eyebrow text-gold">INVITATION</span>
-          <h1>Start Your Free Trial</h1>
-          <p class="text-lg text-muted mt-sm" style="font-family: var(--font-display); font-style: italic;">Experience the depth of human connection.</p>
-        </div>
-        
-        <div class="form-card mx-auto">
+      <div class="container container-narrow" style="max-width: 1000px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 0; background: var(--white); border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.08); overflow: hidden; color: var(--black); border-top: 4px solid var(--gold);">
+          <div style="background: url('images/companion-bg.jpg') center/cover no-repeat; min-height: 400px;"></div>
+          <div style="padding: 3rem;">
+            <div style="margin-bottom: 2rem;">
+              <span class="eyebrow text-gold" style="font-weight:600; letter-spacing:0.1em; display:block; margin-bottom:1rem;">INVITATION</span>
+              <h1 style="font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 1rem;">Start Your Free Trial</h1>
+              <p style="color: var(--text-on-light-muted); font-size: 1.1rem;">Experience the depth of human connection.</p>
+            </div>
+            
+            <div class="form-card" style="box-shadow: none; padding: 0;">
           <form id="trial-form" onsubmit="event.preventDefault(); alert('Free trial requested! (This is a frontend demo)');">
             <div class="grid-2 mb-md">
               <div class="form-group">
@@ -101,15 +103,10 @@
               </select>
             </div>
             
-            <button type="submit" class="btn btn-gold w-full text-center" style="justify-content:center; padding: 1rem;">
-              START MY 3-DAY FREE TRIAL
-            </button>
-            
-            <p class="text-center text-sm text-muted mt-md">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px; margin-top:-2px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-              No payment required. Your trial starts immediately after signup.
-            </p>
+            <button type="submit" class="btn btn-gold btn-full">Begin Trial</button>
           </form>
+          </div>
+          </div>
         </div>
         
         <!-- TRUST BADGES -->

@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // --------------------------------------------------
   // 1. Mobile Menu Toggle
   // --------------------------------------------------
-  const hamburger = document.getElementById('nav-hamburger');
-  const mobileNav = document.getElementById('mobile-nav');
+  const hamburger = document.getElementById('menu-toggle');
+  const mobileNav = document.getElementById('mobile-menu');
 
   if (hamburger && mobileNav) {
     hamburger.addEventListener('click', () => {

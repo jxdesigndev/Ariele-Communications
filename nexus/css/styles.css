@@ -1527,10 +1527,12 @@ button { cursor: pointer; }
   }
 
   /* Nav */
-  .nav-links {
+  .nav-links,
+  .nav-right {
     display: none;
   }
-  .nav-hamburger {
+
+  .menu-toggle {
     display: flex;
   }
   .nav-actions .nav-login {

@@ -49,15 +49,19 @@
   <main style="padding-top: var(--nav-height);">
     
     <section class="hero hero-corporate animate-on-scroll" style="background: linear-gradient(to bottom right, var(--black), #1a1a1a); padding: 8rem 0 6rem 0; border-bottom: 2px solid var(--gold); color: var(--white);">
-      <div class="container container-narrow">
+      <div class="container container-narrow" style="max-width: 1000px;">
         
-        <div class="text-center" style="margin-bottom: 3rem;">
-          <h1 style="font-family: var(--font-display); font-size: 3rem; margin-bottom: 1rem;">Contact Us</h1>
-          <p style="color: var(--text-on-light-muted); font-size: 1.1rem;">We're here to help with inquiries about our products or partnerships.</p>
-        </div>
-        
-        <div style="background: var(--white); padding: 3rem; border-radius: var(--radius-lg); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-top: 4px solid var(--black);">
-          <form onsubmit="event.preventDefault(); alert('Message sent! (This is a frontend demo)');">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 0; background: var(--white); border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.08); overflow: hidden; color: var(--black);">
+          
+          <div style="background: url('images/contact-bg.jpg') center/cover no-repeat; min-height: 400px;"></div>
+          
+          <div style="padding: 3rem;">
+            <div style="margin-bottom: 2rem;">
+              <h1 style="font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 1rem;">Contact Us</h1>
+              <p style="color: var(--text-on-light-muted); font-size: 1.1rem;">We're here to help with inquiries about our products or partnerships.</p>
+            </div>
+            
+            <form onsubmit="event.preventDefault(); alert('Message sent! (This is a frontend demo)');">
             
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
               <div>
@@ -88,6 +92,7 @@
             
             <button type="submit" style="background: var(--black); color: var(--white); padding: 1rem; border-radius: var(--radius); font-weight: 600; width: 100%; font-size: 1rem; cursor: pointer;">Send Message</button>
           </form>
+          </div>
         </div>
         
       </div>

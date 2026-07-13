@@ -1124,12 +1124,12 @@ section {
   }
 
   /* Nav */
-  .nav__links,
-  .nav__cta {
+  .nav-links,
+  .nav-right {
     display: none;
   }
 
-  .nav__hamburger {
+  .menu-toggle {
     display: flex;
   }
 

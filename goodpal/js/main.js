@@ -7,8 +7,8 @@
   'use strict';
 
   // === 1. MOBILE MENU TOGGLE ===
-  const hamburger = document.getElementById('nav-hamburger');
-  const mobileMenu = document.getElementById('nav-mobile');
+  const hamburger = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
 
   if (hamburger && mobileMenu) {
     hamburger.addEventListener('click', function () {
